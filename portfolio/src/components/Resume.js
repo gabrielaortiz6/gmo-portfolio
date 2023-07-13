@@ -4,6 +4,7 @@ const Resume = () => {
   return (
     <section>
       {/* Resume content */}
+      <h1>Resume</h1>
     </section>
   );
 };
