@@ -45,11 +45,11 @@ const Contact = () => {
   };
 
   return (
-    <section>
+    <section className="p-5 m-3">
       <h1>Contact</h1>
 
       <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="formName">
+        <Form.Group controlId="formName"  className="m-3">
           <Form.Label>Name</Form.Label>
           <Form.Control
             type="text"
@@ -61,7 +61,7 @@ const Contact = () => {
           {nameError && <Form.Text className="text-danger">Name is required</Form.Text>}
         </Form.Group>
 
-        <Form.Group controlId="formEmail">
+        <Form.Group controlId="formEmail"  className="m-3">
           <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
@@ -73,7 +73,7 @@ const Contact = () => {
           {emailError && <Form.Text className="text-danger">Please enter a valid email address</Form.Text>}
         </Form.Group>
 
-        <Form.Group controlId="formMessage">
+        <Form.Group controlId="formMessage"  className="m-3">
           <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
@@ -84,7 +84,7 @@ const Contact = () => {
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" className="m-3" type="submit">
           Submit
         </Button>
       </Form>

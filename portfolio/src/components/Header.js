@@ -1,25 +1,10 @@
-// import React, { useState } from 'react';
-// import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } from '../colors';
-// import Navigation from './Navigation';
-
-// const Header = ({ activeSection, handleNavigationClick }) => {
-//   return (
-//     <header>
-//       <h1 style={{ color: pink }}>Gabriela M. Ortiz</h1>{/* Developer's name */}
-//       {/* Navigation component */}
-//       <Navigation activeSection={activeSection} onNavigationClick={handleNavigationClick} />
-//     </header>
-//   );
-// };
-
-// export default Header;
-
 import React, { useState } from 'react';
 import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } from '../colors';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
+import { Nav } from 'react-bootstrap';
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('About');
@@ -33,34 +18,40 @@ const Header = () => {
     <header>
       <h1 style={{ color: pink }}>Gabriela M. Ortiz</h1> {/* Developer's name */}
       {/* Navigation component */}
-      <nav>
-        <ul>
-          <li
+      <Nav className="justify-content-center">
+        <Nav.Item>
+          <Nav.Link
             className={activeSection === 'About' ? 'active' : ''}
             onClick={() => handleNavigationClick('About')}
           >
             About
-          </li>
-          <li
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
             className={activeSection === 'Portfolio' ? 'active' : ''}
             onClick={() => handleNavigationClick('Portfolio')}
           >
             Portfolio
-          </li>
-          <li
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
             className={activeSection === 'Contact' ? 'active' : ''}
             onClick={() => handleNavigationClick('Contact')}
           >
             Contact
-          </li>
-          <li
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
             className={activeSection === 'Resume' ? 'active' : ''}
             onClick={() => handleNavigationClick('Resume')}
           >
             Resume
-          </li>
-        </ul>
-      </nav>
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
       {/* Render content based on activeSection */}
       {activeSection === 'About' && <About />}
       {activeSection === 'Portfolio' && <Portfolio />}
