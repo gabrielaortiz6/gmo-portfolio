@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button, Col, Row } from 'react-bootstrap';
 import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } from '../colors';
+import calorieTrackerImg from '../assets/images/calorie-tracker-screenshot.png';
 
 const Portfolio = () => {
   const projects = [
@@ -12,7 +13,7 @@ const Portfolio = () => {
     },
     {
       title: 'calorie tracker',
-      image: 'project2.png',
+      image: calorieTrackerImg,
       deployedLink: 'https://gabrielaortiz6.github.io/calorie-tracker/',
       githubLink: 'https://github.com/gabrielaortiz6/calorie-tracker',
     },

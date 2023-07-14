@@ -17,12 +17,12 @@ const Header = () => {
 
   return (
       <Container fluid className="vh-100 d-flex flex-column">
-      <Row className="flex-grow-1">
+      <Row className="flex-grow-1 flex-column">
       <Col xs={12} md={2} className="p-3">
     <header>
       <h1 style={{ color: pink }}>Gabriela M. Ortiz</h1>
       <p>full stack developer </p>
-      <Nav className="justify-content-center">
+      <Nav className="flex-column">
         <Nav.Item>
           <Nav.Link style={{color: textColor}}
             className={activeSection === 'About' ? 'nav-link active' : 'nav-link'}

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { darkPurple } from '../colors';
+import myFace from '../assets/images/myface.jpg';
 
 const AboutMe = () => {
   return (
     <section>
       <Card body className="mb-3 border-0" style={{backgroundColor: darkPurple}}>
-        <Card.Img variant="top" className="mb-3" src="path/to/image.jpg" alt="About Me Image" />
+        <Card.Img variant="top" className="mb-3" src={myFace} alt="About Me Image" />
         <Card.Text style={{ textAlign: 'left' }}>
           <p>
             Born in Cuba, raised in Miami, Fl, based in PVD, RI. </p>
