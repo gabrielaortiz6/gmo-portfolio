@@ -10,17 +10,17 @@ const Footer = () => {
       <Container>
         <Row className="justify-content-center">
           <Col>
-            <a href="https://github.com/gabrielaortiz6/" style={{ color: textColor }} target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/gabrielaortiz6/" style={{ color: textColor, textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
               GitHub↗
             </a>
           </Col>
           <Col>
-            <a href="https://www.linkedin.com/in/gabriela-ortiz-74641518a/" style={{ color: textColor }} target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/gabriela-ortiz-74641518a/" style={{ color: textColor, textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
               LinkedIn↗
             </a>
           </Col>
           <Col>
-            <a href="https://www.instagram.com/mieldeabeja.art/" style={{ color: textColor }} target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/mieldeabeja.art/" style={{ color: textColor, textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">
               Instagram↗
             </a>
           </Col>

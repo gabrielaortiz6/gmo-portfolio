@@ -10,7 +10,7 @@ const AboutMe = () => {
         <Card.Img variant="top" className="mb-3" src={myFace} alt="About Me Image" />
         <Card.Text style={{ textAlign: 'left' }}>
           <p>
-            Born in Cuba, raised in Miami, Fl, based in PVD, RI. </p>
+            Born in 1998 in Cienfuegos, Cuba, raised in Miami, FL, currently based in PVD, RI. </p>
             <p>Background in media theory and media production (text, visual, time-based)
             from Brown University. </p>
            <p> Lover of puzzles and cats.

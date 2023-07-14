@@ -1,13 +1,16 @@
 import React from 'react';
-import { Card, Button, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
+import { FaGithub } from 'react-icons/fa';
 import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } from '../colors';
-import calorieTrackerImg from '../assets/images/calorie-tracker-screenshot.png';
+import calorieTrackerImg from '../assets/images/calorie-tracker.png';
+import horiHoriImg from '../assets/images/hori-hori.png';
+import schedulerImg from '../assets/images/scheduler.png';
 
 const Portfolio = () => {
   const projects = [
     {
       title: 'hori hori',
-      image: 'project1.png',
+      image: horiHoriImg,
       deployedLink: 'https://vast-reaches-42188.herokuapp.com/',
       githubLink: 'https://github.com/PhilRug/hori-hori',
     },
@@ -24,16 +27,16 @@ const Portfolio = () => {
       githubLink: 'https://github.com/CJB14/Robo-art',
     },
     {
-      title: 'e-commerce back end',
+      title: 'e-commerce backend',
       image: 'project2.png',
       deployedLink: 'https://github.com/gabrielaortiz6/e-commerce-app',
       githubLink: 'https://github.com/gabrielaortiz6/e-commerce-app',
     },
     {
-      title: 'note taker',
-      image: 'project2.png',
-      deployedLink: '',
-      githubLink: 'https://github.com/gabrielaortiz6/note-taker',
+      title: 'scheduler',
+      image: schedulerImg,
+      deployedLink: 'https://gabrielaortiz6.github.io/schedule-maker/',
+      githubLink: 'https://github.com/gabrielaortiz6/schedule-maker',
     },
     {
       title: 'social media api',
@@ -45,23 +48,22 @@ const Portfolio = () => {
 
   return (
     <section>
-      <div style={{ height: '100vh', overflowY: 'auto' }}>
-      <Row className="g-4" >
-        {projects.map((project, index) => (
-          <Col key={index}>
-            <Card style={{ border: 'none' }}>
-              <Card.Img variant="top" src={project.image} alt={project.title} />
+      <div style={{ paddingTop: '35px', height: '100vh', overflowX: 'hidden', overflowY: 'auto' }}>
+        <Row className="g-4 mt-8">
+          {projects.map((project, index) => (
+            <Col key={index} xs={12} sm={12} md={12} className="mx-0" >
+              <Card style={{ border: 'none', padding: 0, background: 'none' }}>
+                  <Card.Title style={{ color: textColor, display: 'inline-block', marginBottom: '2px', paddingRight: '15px' }} className="text-end">
+                  <a variant="link" href={project.githubLink} style={{ display: 'inline-block', textAlign: 'right', marginRight: '5px', color: textColor }} target="_blank" rel="noopener noreferrer">
+                    <FaGithub size={16} />
+                  </a>
+                    <a href={project.deployedLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: textColor }}>
+                      {project.title} </a>
+                </Card.Title>
               <Card.Body>
-                <Card.Title className="text-end">{project.title}</Card.Title>
-                <div className="caption">
-                  <Button variant="link" href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    GitHub
-                  </Button>
-                </div>
-                <div className="caption">
-                  <Button variant="link" href={project.deployedLink} target="_blank" rel="noopener noreferrer">
-                    Deployed Site
-                  </Button>
+                <div className='image-container'>
+                <div className="image-overlay"></div>
+                <Card.Img className="project-image" style={{ borderRadius: 0, marginTop: '1px' }} variant="top" src={project.image} alt={project.title} />
                 </div>
               </Card.Body>
             </Card>
@@ -69,7 +71,7 @@ const Portfolio = () => {
         ))}
       </Row>
     </div>
-    </section>
+    </section >
   );
 };
 
