@@ -1,10 +1,31 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { textColor, darkPurple, pink } from '../colors';
 
 const Resume = () => {
+  const proficiencies = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'NoSQL', 'MySQL/Sequelize', 'MongoDB/Mongoose', 'Graphic Design'];
+
   return (
     <section>
-      {/* Resume content */}
-      <h1>Resume</h1>
+      <Container>
+        <Row className="justify-content-center mb-5">
+          <Col>
+        <Row className="justify-content-center mb-5">
+          <Col>
+          <a href="/path/to/resume.pdf" download style={{ textDecoration: 'none' }}>
+            <h3 className="resume-link">Resume</h3>
+            </a>
+          </Col>
+        </Row>
+            <h4 className="mb-3" style={{color: textColor, textAlign: 'right'}}>Proficiencies</h4>
+            <ul style={{color: textColor}}>
+              {proficiencies.map((skill, index) => (
+                <li style={{ textDecoration: 'none'}} key={index}>{skill}</li>
+              ))}
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

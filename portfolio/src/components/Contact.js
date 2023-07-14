@@ -47,8 +47,6 @@ const Contact = () => {
 
   return (
     <section className="p-3">
-      <h2 style={{color: textColor}}>Contact</h2>
-
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formName"  className="m-3">
           <Form.Label style={{color: textColor}}>Name</Form.Label>

@@ -38,29 +38,59 @@
   transition: color 0.3s, transform 0.3s;
 }
 
-p {
+p, 
+h2,
+h3 {
   color: var(--text-color);
+}
+
+h2, 
+h3 {
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+  text-align: right;
+}
+
+li:before {
+  content: "+";
+  padding-right: 5px;
 }
 
 a,
 .footer-link,
-.project-link {
+.project-link,
+.resume-link {
   color: var(--text-color);
   transition: color 0.3s, transform 0.3s;
 }
 
 a:hover,
 .footer-link:hover,
-.project-link:hover {
+.project-link:hover,
+.resume-link:hover {
   color: rgb(197, 189, 189); 
   transform: scale(0.95);
 }
 
 .footer-link,
-.project-link {
+.project-link,
+a.resume-link {
   text-decoration: none;
 }
 
+.resume-link{
+  font-style: italic;
+}
 
 .fixed-bottom {
   position: fixed;
