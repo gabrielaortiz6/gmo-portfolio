@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { darkPurple } from '../colors';
-import myFace from '../assets/images/myface.jpg';
+import myFace from '../assets/images/myface.png';
 
 const AboutMe = () => {
   return (

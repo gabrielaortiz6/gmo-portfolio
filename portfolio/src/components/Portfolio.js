@@ -5,6 +5,9 @@ import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } fr
 import calorieTrackerImg from '../assets/images/calorie-tracker.png';
 import horiHoriImg from '../assets/images/hori-hori.png';
 import schedulerImg from '../assets/images/scheduler.png';
+import socialMediaImg from '../assets/images/social-media.png';
+import eCommImg from '../assets/images/e-commerce.png';
+import roboArtImg from '../assets/images/robo-art.png';
 
 const Portfolio = () => {
   const projects = [
@@ -22,14 +25,14 @@ const Portfolio = () => {
     },
     {
       title: 'robo art',
-      image: 'project2.png',
+      image: roboArtImg,
       deployedLink: 'google.com',
       githubLink: 'https://github.com/CJB14/Robo-art',
     },
     {
       title: 'e-commerce backend',
-      image: 'project2.png',
-      deployedLink: 'https://github.com/gabrielaortiz6/e-commerce-app',
+      image: eCommImg,
+      deployedLink: 'https://drive.google.com/file/d/11JwHtQp1q10oHnEOrMMgAq6MpnPt5ZuF/view',
       githubLink: 'https://github.com/gabrielaortiz6/e-commerce-app',
     },
     {
@@ -40,8 +43,8 @@ const Portfolio = () => {
     },
     {
       title: 'social media api',
-      image: 'project2.png',
-      deployedLink: 'https://github.com/gabrielaortiz6/social-media-api',
+      image: socialMediaImg,
+      deployedLink: 'https://drive.google.com/file/d/1ZtGBOWBN4irzuU5LcgJzYKJ2MjXPNFBJ/view',
       githubLink: 'https://github.com/gabrielaortiz6/social-media-api',
     }
   ];
