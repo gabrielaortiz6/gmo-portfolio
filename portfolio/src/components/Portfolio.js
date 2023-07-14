@@ -43,22 +43,22 @@ const Portfolio = () => {
 
   return (
     <section>
-      <h1>Portfolio</h1>
-
-      <Row xs={1} md={2} className="g-4">
+      <div style={{ height: '100vh', overflowY: 'auto' }}>
+      <Row className="g-4" >
         {projects.map((project, index) => (
           <Col key={index}>
-            <Card>
+            <Card style={{ border: 'none' }}>
               <Card.Img variant="top" src={project.image} alt={project.title} />
               <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
+                <Card.Title className="text-end">{project.title}</Card.Title>
                 <div className="caption">
-                  <Button variant="link" href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub
+                  <Button variant="link" href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                    GitHub
                   </Button>
                 </div>
                 <div className="caption">
                   <Button variant="link" href={project.deployedLink} target="_blank" rel="noopener noreferrer">
-                   Deployed Site
+                    Deployed Site
                   </Button>
                 </div>
               </Card.Body>
@@ -66,6 +66,7 @@ const Portfolio = () => {
           </Col>
         ))}
       </Row>
+    </div>
     </section>
   );
 };
