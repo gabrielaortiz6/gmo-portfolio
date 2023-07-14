@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } from '../colors';
+import { Container, Row, Nav, Col } from 'react-bootstrap';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
-import { Nav } from 'react-bootstrap';
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('About');
@@ -15,9 +15,12 @@ const Header = () => {
   };
 
   return (
+      <Container fluid className="vh-100 d-flex flex-column">
+      <Row className="flex-grow-1">
+      <Col xs={12} md={2} className="p-3">
     <header>
-      <h1 style={{ color: pink }}>Gabriela M. Ortiz</h1> {/* Developer's name */}
-      {/* Navigation component */}
+      <h1 style={{ color: pink }}>Gabriela M. Ortiz</h1>
+      <p>full stack developer </p>
       <Nav className="justify-content-center">
         <Nav.Item>
           <Nav.Link
@@ -52,12 +55,18 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
       </Nav>
-      {/* Render content based on activeSection */}
+      </header>
+      </Col>
+      <Col xs={12} md={3} style={{ position: 'fixed', bottom: 0, right: 0 }} className="p-3 d-flex justify-content-end">
+      <div className="align-self-end">
       {activeSection === 'About' && <About />}
       {activeSection === 'Portfolio' && <Portfolio />}
       {activeSection === 'Contact' && <Contact />}
       {activeSection === 'Resume' && <Resume />}
-    </header>
+      </div>
+      </Col>
+      </Row>
+      </Container>
   );
 };
 
