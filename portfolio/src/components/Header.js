@@ -24,7 +24,7 @@ const Header = () => {
       <p>full stack developer </p>
       <Nav className="justify-content-center">
         <Nav.Item>
-          <Nav.Link
+          <Nav.Link style={{color: textColor}}
             className={activeSection === 'About' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('About')}
           >
@@ -32,7 +32,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link
+          <Nav.Link style={{color: textColor}}
             className={activeSection === 'Portfolio' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Portfolio')}
           >
@@ -40,7 +40,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link
+          <Nav.Link style={{color: textColor}}
             className={activeSection === 'Contact' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Contact')}
           >
@@ -48,7 +48,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link
+          <Nav.Link style={{color: textColor}}
             className={activeSection === 'Resume' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Resume')}
           >

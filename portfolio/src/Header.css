@@ -2,6 +2,8 @@
     position: relative;
     padding-left: 20px; /* Adjust the spacing as needed */
     transition: padding-left 0.3s ease;
+    color: var(--text-color);
+    transition: color 0.3s, transform 0.3s;
   }
   
   .nav-link.active::before {
@@ -18,4 +20,9 @@
   
   .nav-link.active {
     padding-left: 30px; /* Adjust the spacing to accommodate the bullet */
+  }
+
+  .nav-link.hover {
+    color: #333; 
+    transform: scale(0.95);
   }

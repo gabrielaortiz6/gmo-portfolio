@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { midPurple, textColor, darkPurple } from '../colors';
+import { midPurple, textColor, darkPurple, pink } from '../colors';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -46,12 +46,12 @@ const Contact = () => {
   };
 
   return (
-    <section className="p-5 m-3">
-      <h1>Contact</h1>
+    <section className="p-3">
+      <h2 style={{color: textColor}}>Contact</h2>
 
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formName"  className="m-3">
-          <Form.Label>Name</Form.Label>
+          <Form.Label style={{color: textColor}}>Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="Name"
@@ -63,7 +63,7 @@ const Contact = () => {
         </Form.Group>
 
         <Form.Group controlId="formEmail"  className="m-3">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label style={{color: textColor}}>Email address</Form.Label>
           <Form.Control
             type="email"
             placeholder="Email"
@@ -75,7 +75,7 @@ const Contact = () => {
         </Form.Group>
 
         <Form.Group controlId="formMessage"  className="m-3">
-          <Form.Label>Message</Form.Label>
+          <Form.Label style={{color: textColor}}>Message</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
@@ -85,7 +85,7 @@ const Contact = () => {
           />
         </Form.Group>
 
-        <Button style={{borderColor: midPurple, backgroundColor: midPurple, color: textColor}}variant="primary" class="btn" className="m-3 btn" type="submit">
+        <Button style={{borderColor: pink, backgroundColor: pink, color: textColor}}variant="primary" class="btn" className="m-3 btn" type="submit">
           Submit
         </Button>
       </Form>

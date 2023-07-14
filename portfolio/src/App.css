@@ -34,11 +34,38 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--text-color);
+  transition: color 0.3s, transform 0.3s;
 }
 
-.btn {
-background-color: var(--mid-purple);
+p {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+  transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+  color: #333; 
+  transform: scale(0.95);
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  padding: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+}
+
+.btn:active {
+  color: #333; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes App-logo-spin {
