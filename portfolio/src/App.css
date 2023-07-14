@@ -42,15 +42,25 @@ p {
   color: var(--text-color);
 }
 
-a {
+a,
+.footer-link,
+.project-link {
   color: var(--text-color);
   transition: color 0.3s, transform 0.3s;
 }
 
-a:hover {
-  color: #333; 
+a:hover,
+.footer-link:hover,
+.project-link:hover {
+  color: rgb(197, 189, 189); 
   transform: scale(0.95);
 }
+
+.footer-link,
+.project-link {
+  text-decoration: none;
+}
+
 
 .fixed-bottom {
   position: fixed;

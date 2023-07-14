@@ -57,7 +57,7 @@ const Portfolio = () => {
                   <a variant="link" href={project.githubLink} style={{ display: 'inline-block', textAlign: 'right', marginRight: '5px', color: textColor }} target="_blank" rel="noopener noreferrer">
                     <FaGithub size={16} />
                   </a>
-                    <a href={project.deployedLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: textColor }}>
+                    <a href={project.deployedLink} target="_blank" rel="noopener noreferrer" className="project-link">
                       {project.title} </a>
                 </Card.Title>
               <Card.Body>
