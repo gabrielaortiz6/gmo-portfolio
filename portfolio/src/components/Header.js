@@ -5,6 +5,7 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
+import '../Header.css';
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('About');
@@ -24,7 +25,7 @@ const Header = () => {
       <Nav className="justify-content-center">
         <Nav.Item>
           <Nav.Link
-            className={activeSection === 'About' ? 'active' : ''}
+            className={activeSection === 'About' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('About')}
           >
             About
@@ -32,7 +33,7 @@ const Header = () => {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            className={activeSection === 'Portfolio' ? 'active' : ''}
+            className={activeSection === 'Portfolio' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Portfolio')}
           >
             Portfolio
@@ -40,7 +41,7 @@ const Header = () => {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            className={activeSection === 'Contact' ? 'active' : ''}
+            className={activeSection === 'Contact' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Contact')}
           >
             Contact
@@ -48,7 +49,7 @@ const Header = () => {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link
-            className={activeSection === 'Resume' ? 'active' : ''}
+            className={activeSection === 'Resume' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Resume')}
           >
             Resume
