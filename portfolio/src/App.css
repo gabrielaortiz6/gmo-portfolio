@@ -1,3 +1,12 @@
+:root {
+  --pink: #C290B6;
+  --dark-purple: #101353;
+  --text-color: #FFFFFF;
+  --mid-purple: #080bda;
+  --light-purple: #796de2;
+  --darkest-purple: #050c4e;
+}
+
 .App {
   text-align: center;
 }
@@ -28,6 +37,10 @@
   color: #61dafb;
 }
 
+.btn {
+background-color: var(--mid-purple);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +48,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+/* Target the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Background color of the scrollbar track */
+}
+
+/* Target the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: var(--mid-purple);
 }

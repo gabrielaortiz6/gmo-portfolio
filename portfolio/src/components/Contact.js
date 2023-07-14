@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import { midPurple, textColor, darkPurple } from '../colors';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -53,7 +54,7 @@ const Contact = () => {
           <Form.Label>Name</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter your name"
+            placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             isInvalid={nameError}
@@ -65,7 +66,7 @@ const Contact = () => {
           <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Enter your email"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             isInvalid={emailError}
@@ -84,7 +85,7 @@ const Contact = () => {
           />
         </Form.Group>
 
-        <Button variant="primary" className="m-3" type="submit">
+        <Button style={{borderColor: midPurple, backgroundColor: midPurple, color: textColor}}variant="primary" class="btn" className="m-3 btn" type="submit">
           Submit
         </Button>
       </Form>

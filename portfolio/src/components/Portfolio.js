@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Button, Col, Row } from 'react-bootstrap';
+import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } from '../colors';
 
 const Portfolio = () => {
   const projects = [
