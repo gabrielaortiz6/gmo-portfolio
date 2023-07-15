@@ -6,7 +6,7 @@ import { darkPurple } from './colors';
 
 const App = () => {
   return (
-    <div style={{ backgroundColor: darkPurple}} className="App">
+    <div className="App bg-color">
       <Layout />
     </div>
   );

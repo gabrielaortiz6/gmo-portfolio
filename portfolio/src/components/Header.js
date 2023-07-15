@@ -58,7 +58,7 @@ const Header = () => {
       </Nav>
       </header>
       </Col>
-      <Col xs={12} md={3} style={{ position: 'fixed', bottom: 0, right: 0 }} className="p-3 d-flex justify-content-end">
+      <Col xs={3} md={3} style={{ position: 'fixed', bottom: 0, right: 0 }} className="p-3 d-flex justify-content-end">
       <div className="align-self-end">
       {activeSection === 'About' && <About />}
       {activeSection === 'Portfolio' && <Portfolio />}

@@ -6,7 +6,7 @@ import myFace from '../assets/images/myface.png';
 const AboutMe = () => {
   return (
     <section>
-      <Card body className="mb-3 border-0" style={{backgroundColor: darkPurple}}>
+      <Card body className="mb-3 border-0" style={{backgroundColor: 'transparent'}}>
         <Card.Img variant="top" className="mb-3" src={myFace} alt="About Me Image" />
         <Card.Text style={{ textAlign: 'left' }}>
           <p>
