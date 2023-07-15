@@ -12,7 +12,7 @@ const Resume = () => {
           <Col>
         <Row className="justify-content-center mb-5">
           <Col>
-          <a href="../assets/pdf/resume.pdf" download style={{ textDecoration: 'none' }}>
+          <a href="https://drive.google.com/file/d/1HQy7zPNxPBxmzHrhtcvTfeJfaWXChTXT/view?usp=sharing" download style={{ textDecoration: 'none' }}>
             <h3 className="resume-link">Resume</h3>
             </a>
           </Col>
